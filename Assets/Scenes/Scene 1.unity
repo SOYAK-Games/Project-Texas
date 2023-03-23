@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 182215374}
   - component: {fileID: 182215373}
   - component: {fileID: 182215372}
-  - component: {fileID: 182215376}
   m_Layer: 0
   m_Name: Pistol (Collectible)
   m_TagString: Pistol
@@ -247,20 +246,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &182215376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 182215371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f25b7d27320cc9640bd19f2867380709, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amountToPool: 6
-  bulletPrefab: {fileID: 7883415281979476382, guid: 035011e9d2e66c24b96e3dc7d8240a97, type: 3}
 --- !u!1 &433060229
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +632,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947417976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.095, y: 0.28, z: 0}
+  m_LocalPosition: {x: 1.871, y: 0.195, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -668,10 +653,8 @@ GameObject:
   - component: {fileID: 1992564738}
   - component: {fileID: 1992564732}
   - component: {fileID: 1992564736}
-  - component: {fileID: 1992564735}
-  - component: {fileID: 1992564737}
+  - component: {fileID: 1992564741}
   - component: {fileID: 1992564739}
-  - component: {fileID: 1992564740}
   m_Layer: 8
   m_Name: Player
   m_TagString: GameController
@@ -746,7 +729,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1992564734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -799,21 +782,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1992564735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1992564730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c0dee1fa1399464a80b199869c16d88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _movementSpeed: 4
-  isCharacterMoving: 0
-  _animator: {fileID: 1992564736}
 --- !u!95 &1992564736
 Animator:
   serializedVersion: 5
@@ -835,19 +803,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1992564737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1992564730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 319e71cb815dfb144a6b9fcf3483a6cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _camera: {fileID: 433060231}
 --- !u!58 &1992564738
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -877,7 +832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1992564730}
---- !u!114 &1992564740
+--- !u!114 &1992564741
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -886,10 +841,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1992564730}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25cbe1f186099c443b184dca60aa7722, type: 3}
+  m_Script: {fileID: 11500000, guid: 14416b84c44d2254cbb227b647591520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpawnPoint: {fileID: 1947417977}
+  _speed: 4
+  isCharacterMoving: 0
   _animator: {fileID: 1992564736}
-  canFire: 0
-  FireCooldown: 0
+  _bulletTrail: {fileID: 8071415750942524881, guid: 04bfe3ef1306bb347813d02a059016bd, type: 3}
+  _weaponRange: 20
+  _gunPoint: {fileID: 1947417977}
