@@ -112,24 +112,31 @@ public class Player : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                PistolAnimation();
-                var hit = Physics2D.Raycast(
-                    _gunPoint.position, transform.right, _weaponRange);
-
-                var trail = Instantiate(
-                    _bulletTrail, _gunPoint.position, transform.rotation);
-                var trailscript = trail.GetComponent<BulletTrail>();
-
-                if (hit.collider != null)
+                if (_animator.GetCurrentAnimatorStateInfo(0).IsName("PlayerPistolShoot")&&Input.GetMouseButtonDown(0))
                 {
-                    trailscript.SetTargetPosition(hit.point);
-                    var hittable = hit.collider.GetComponent<IHittable>();
-                    hittable?.Hit();
+                    return;
                 }
                 else
                 {
-                    var endPosition = _gunPoint.position + transform.right * _weaponRange;
-                    trailscript.SetTargetPosition(endPosition);
+                    PistolAnimation();
+                    var hit = Physics2D.Raycast(
+                        _gunPoint.position, transform.right, _weaponRange);
+
+                    var trail = Instantiate(
+                        _bulletTrail, _gunPoint.position, transform.rotation);
+                    var trailscript = trail.GetComponent<BulletTrail>();
+
+                    if (hit.collider != null)
+                    {
+                        trailscript.SetTargetPosition(hit.point);
+                        var hittable = hit.collider.GetComponent<IHittable>();
+                        hittable?.Hit();
+                    }
+                    else
+                    {
+                        var endPosition = _gunPoint.position + transform.right * _weaponRange;
+                        trailscript.SetTargetPosition(endPosition);
+                    }
                 }
             }
         }
@@ -149,8 +156,9 @@ public class Player : MonoBehaviour
     
     private void PistolAnimation()
     {
-        _animator.SetBool("PlayerShootPistol", true);
-        StartCoroutine(ResetAnimation());
+        _animator.Play("PlayerPistolShoot");
+        //_animator.SetBool("PlayerShootPistol", true);
+        //StartCoroutine(ResetAnimation());
     }
     private IEnumerator ResetAnimation() 
     {
@@ -161,7 +169,6 @@ public class Player : MonoBehaviour
         }
     }
     #endregion
-    
 }
 
 internal interface IHittable
