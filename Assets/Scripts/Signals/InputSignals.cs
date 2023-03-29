@@ -8,7 +8,7 @@ namespace Signals
     {
         public UnityAction onInputTaken = delegate { };
         public UnityAction onInputReleased = delegate { };
-        public UnityAction onMouseInputTaken = delegate { };
-        public UnityAction onMouseInputReleased = delegate {  };
+        public UnityAction onLeftMouseInput = delegate { };
+        public UnityAction onRightMouseInput = delegate {  };
     }
 }

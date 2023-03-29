@@ -176,9 +176,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.05, y: 0}
   serializedVersion: 2
-  m_Radius: 0.53125
+  m_Radius: 0.61
 --- !u!212 &182215374
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -240,7 +240,7 @@ Transform:
   m_GameObject: {fileID: 182215371}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.92, y: -1, z: 0.088668525}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -751,7 +751,9 @@ MonoBehaviour:
   AnimationController: {fileID: 1992564737}
   PlayerHasPistol: 0
   _bulletTrail: {fileID: 8071415750942524881, guid: 04bfe3ef1306bb347813d02a059016bd, type: 3}
+  pistol: {fileID: 8071415750942524881, guid: bc630f1ff433aec4889de1a418f45824, type: 3}
   _weaponRange: 15
+  weaponThrowRange: 8
   _gunPoint: {fileID: 1947417977}
 --- !u!1 &1185506675
 GameObject:
@@ -887,7 +889,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268679109}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.35, y: 0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

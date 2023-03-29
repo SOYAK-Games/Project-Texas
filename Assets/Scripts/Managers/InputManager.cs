@@ -39,27 +39,15 @@ namespace Managers
             }
             if (Input.GetMouseButtonDown(0))
             {
-                MouseInputTaken();
+                LeftMouseInputTaken();
             }
 
-            if (Input.GetMouseButtonUp(0))
+            if (Input.GetMouseButtonDown(1))
             {
-                MouseInputReleased();
-            }
-
-        }
-
-        private void OnMouseInput()
-        {
-            if(Input.GetMouseButtonDown(0) == true)
-            {
-                MouseInput = true;
-            }
-            else if (Input.GetMouseButton(0) != true)
-            {
-                MouseInput = false;
+                RightMouseInputTaken();
             }
         }
+        
         private void OnInputTaken()
         {
             KeyboardInput = true;
@@ -72,15 +60,15 @@ namespace Managers
             InputSignals.Instance.onInputReleased?.Invoke();
         }
 
-        private void MouseInputTaken()
+        private void LeftMouseInputTaken()
         {
             MouseInput = true;
-            InputSignals.Instance.onMouseInputTaken?.Invoke();
+            InputSignals.Instance.onLeftMouseInput?.Invoke();
         }
-        private void MouseInputReleased()
+        private void RightMouseInputTaken()
         {
             MouseInput = false;
-            InputSignals.Instance.onMouseInputReleased?.Invoke();
+            InputSignals.Instance.onRightMouseInput?.Invoke();
         }
     }
 }
