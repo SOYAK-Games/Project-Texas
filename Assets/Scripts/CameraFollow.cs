@@ -2,14 +2,15 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public GameObject player;
+    [SerializeField] Transform Player;
     private void Update() 
     {
         FollowPlayer();
     }
     private void FollowPlayer()
     {
-        Vector3 newPos = new Vector3 (player.transform.position.x, player.transform.position.y, transform.position.z); // take players x and y position and keep camera z position, then assigned it to the transform position
+        var position = Player.position;
+        Vector3 newPos = new Vector3 (position.x,position.y,transform.position.z);
         transform.position = newPos;
     }
-}
+} 
