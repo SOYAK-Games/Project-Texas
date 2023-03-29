@@ -5,12 +5,7 @@ using UnityEngine;
 
 public class LegMovement : MonoBehaviour
 {
-    private Vector3 legRotation;
-
-    private void Awake()
-    {
-        legRotation = new Vector3(0, 0, 0);
-    }
+    private Vector3 legRotation = new Vector3(0, 0, 0);
 
     private void Update()
     {
