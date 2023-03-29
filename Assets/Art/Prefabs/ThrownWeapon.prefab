@@ -130,7 +130,7 @@ TrailRenderer:
       atime5: 0
       atime6: 0
       atime7: 0
-      m_Mode: 0
+      m_Mode: 1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f237866c2e96c47896424bd6eb6a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3
+  Speed: 6
 --- !u!212 &6265346185817934066
 SpriteRenderer:
   m_ObjectHideFlags: 0

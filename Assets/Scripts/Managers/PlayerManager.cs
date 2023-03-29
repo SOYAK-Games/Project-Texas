@@ -64,8 +64,8 @@ namespace Managers
             CoreGameSignals.Instance.onPistolShoot += OnPistolShoot;
             CoreGameSignals.Instance.onPistolIdle += OnPistolIdle;
             CoreGameSignals.Instance.onPistolMove += OnPistolMove;
-            InputSignals.Instance.onMouseInputTaken += OnMouseInputTaken;
-            InputSignals.Instance.onMouseInputReleased += OnMouseInputReleased;
+            InputSignals.Instance.onLeftMouseInput += OnLeftMouseInputTaken;
+            InputSignals.Instance.onRightMouseInput += OnRightMouseInputTaken;
             InputSignals.Instance.onInputTaken += OnInputTaken;
             InputSignals.Instance.onInputReleased += OnInputReleased;
         }
@@ -77,8 +77,8 @@ namespace Managers
             CoreGameSignals.Instance.onPistolShoot -= OnPistolShoot;
             CoreGameSignals.Instance.onPistolIdle -= OnPistolIdle;
             CoreGameSignals.Instance.onPistolMove -= OnPistolMove;
-            InputSignals.Instance.onMouseInputTaken -= OnMouseInputTaken;
-            InputSignals.Instance.onMouseInputReleased -= OnMouseInputReleased;
+            InputSignals.Instance.onLeftMouseInput -= OnLeftMouseInputTaken;
+            InputSignals.Instance.onRightMouseInput -= OnRightMouseInputTaken;
             InputSignals.Instance.onInputTaken -= OnInputTaken;
             InputSignals.Instance.onInputReleased -= OnInputReleased;
         }
@@ -110,7 +110,7 @@ namespace Managers
         {
             animationController.PlayPlayerPistolMoving();
         }
-        private void OnMouseInputTaken()
+        private void OnLeftMouseInputTaken()
         {
             if (weaponController.PlayerHasPistol)
             {
@@ -126,9 +126,16 @@ namespace Managers
             }
         }
 
-        private void OnMouseInputReleased()
+        private void OnRightMouseInputTaken()
         {
-            
+            if (weaponController.PlayerHasPistol)
+            {
+                weaponController.ThrowPistol();
+            }
+            else
+            {
+                return;
+            }
         }
         private void OnInputTaken()
         {
