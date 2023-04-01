@@ -2,8 +2,9 @@ namespace Keys
 {
     public struct InputParams
     {
-        public float InputValue;
-        public float InputClampNegativeSide;
-        public float InputClampPositiveSide;
+        public bool WKey;
+        public bool AKey;
+        public bool SKey;
+        public bool DKey;
     }
 }
