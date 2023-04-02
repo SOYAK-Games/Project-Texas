@@ -16,8 +16,7 @@ namespace Managers
     public class InputManager : MonoBehaviour
     {
         #region Private Variables
-        [Space] [ShowInInspector] public static bool KeyboardInput;
-        [Space] [ShowInInspector] public static bool MouseInput;
+
         
         //[ShowInInspector] private InputData _data;
 
@@ -50,24 +49,20 @@ namespace Managers
         
         private void OnInputTaken()
         {
-            KeyboardInput = true;
             InputSignals.Instance.onInputTaken?.Invoke();
         }
 
         private void OnInputReleased()
-        {   
-            KeyboardInput = false;
+        {
             InputSignals.Instance.onInputReleased?.Invoke();
         }
 
         private void LeftMouseInputTaken()
         {
-            MouseInput = true;
             InputSignals.Instance.onLeftMouseInput?.Invoke();
         }
         private void RightMouseInputTaken()
         {
-            MouseInput = false;
             InputSignals.Instance.onRightMouseInput?.Invoke();
         }
     }
