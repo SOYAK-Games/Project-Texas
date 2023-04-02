@@ -7,14 +7,15 @@ using UnityEngine;
 
 public class PlayerWeaponController : MonoBehaviour
 {
-    [SerializeField] private PlayerAnimationController AnimationController;
-    public bool PlayerHasPistol;
+    public bool PlayerHasPistol = false;
+    [SerializeField] private PlayerAnimationController animationController;
     [SerializeField] private GameObject _bulletTrail;
     [SerializeField] private GameObject pistol;
-     private GameObject pistolonground;
     [SerializeField] private float _weaponRange = 15f;
     [SerializeField] private float weaponThrowRange = 8f;
     [SerializeField] private Transform _gunPoint;
+    private GameObject PistolOnGround;
+    internal bool a = false;
 
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -23,21 +24,22 @@ public class PlayerWeaponController : MonoBehaviour
             if (Input.GetMouseButton(1))
             {
                 GrabPistol();
-                pistolonground = other.gameObject;
-                pistolonground.SetActive(false);
+                PistolOnGround = other.gameObject;
+                PistolOnGround.SetActive(false);
             }
+
         }
     }
     private void GrabPistol()
     {
         PlayerHasPistol = true;
-        AnimationController.Animator.SetBool("PlayerHasPistol", true);
+        animationController.Animator.SetBool("PlayerHasPistol", true);
     }
 
     internal void ThrowPistol()
     {
         PlayerHasPistol = false;
-        AnimationController.Animator.SetBool("PlayerHasPistol", false);
+        animationController.Animator.SetBool("PlayerHasPistol", false);
         WeaponThrow();
     }
 
@@ -50,7 +52,10 @@ public class PlayerWeaponController : MonoBehaviour
             {
                 trailscript.SetTargetPosition(hit.point);
                 var hittable = hit.collider.GetComponent<IHittable>();
-                hittable?.Hit();
+                if (hittable != null)
+                {
+                    hittable.ReceiveHit();
+                }
             }
             else
             {
@@ -59,7 +64,7 @@ public class PlayerWeaponController : MonoBehaviour
             }
     }
 
-    public void WeaponThrow()
+    private void WeaponThrow()
     {
         var hit = Physics2D.Raycast(_gunPoint.position, transform.right, weaponThrowRange);
         var trail = Instantiate(pistol, _gunPoint.position, transform.rotation);
@@ -68,22 +73,22 @@ public class PlayerWeaponController : MonoBehaviour
         {
             trailscript.SetTargetPosition(hit.point);
             var hittable = hit.collider.GetComponent<IHittable>();
-            hittable?.Hit();
+            hittable?.ReceiveHit();
         }
         else
         {
             var endPosition = _gunPoint.position + transform.right * weaponThrowRange;
             trailscript.SetTargetPosition(endPosition);
 
-            pistolonground.transform.position = endPosition;
-            pistolonground.SetActive(true);
+            PistolOnGround.transform.position = endPosition;
+            PistolOnGround.SetActive(true);
         }
 
-
     }
-    internal interface IHittable
+
+    private interface IHittable
     {
-        void Hit();
+        void ReceiveHit();
     }
 }
     

@@ -128,7 +128,7 @@ namespace Managers
 
         private void OnRightMouseInputTaken()
         {
-            if (weaponController.PlayerHasPistol)
+            if (weaponController.PlayerHasPistol==true) // pistol yoksa pistolü al
             {
                 weaponController.ThrowPistol();
             }
@@ -136,6 +136,7 @@ namespace Managers
             {
                 return;
             }
+
         }
         private void OnInputTaken()
         {
