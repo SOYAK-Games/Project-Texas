@@ -1,0 +1,499 @@
+fileFormatVersion: 2
+guid: 6c934d8933d2c8c41a0ab65dd28dd3e0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprPoolTable_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407d599e127814f4cb3fc1d60bfdb183
+      internalID: 1339986297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoolTable_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 27.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c72851a2a63db4d9f4cf912887d59b
+      internalID: -929410188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoolTable_2
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 27.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3450cd7bbd2b40e4d8036cd1a9c4223b
+      internalID: 173512599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoolTable_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 27.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d265d7402bbfa9d4f8595062dbeea180
+      internalID: -1206911027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoolTable_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da38729933efab4db01e6105dfa9c50
+      internalID: 892859713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoolTable_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 18.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337600cfc4f605e42984c9334035d6ae
+      internalID: -44999763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoolTable_6
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 18.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8894ca115e6984abeb56615fba3980
+      internalID: -1446013370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoolTable_7
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 18.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9648b5a08aad6fd41a509a11eff9a9c7
+      internalID: 1215507942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoolTable_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a92170888819854087b2ccaeb7f7414
+      internalID: 1534505430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoolTable_9
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 9.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e70ce8e075da0419bce6621655c68a
+      internalID: 1357518611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoolTable_10
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 9.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa92a92a855b31848b80904bce12c8a3
+      internalID: 2084568686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoolTable_11
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 9.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09c15978c6a8ab4dbfe6a2197652de7
+      internalID: -1396722202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoolTable_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee7ad625dadcfe4ba0d5cb6d9c638c9
+      internalID: -605819060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoolTable_13
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f051f7101e61846a4e88ee7f09ff70
+      internalID: -3512534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoolTable_14
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62906d2ed4b3a79479b74168925ff4d4
+      internalID: -282145223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprPoolTable_15
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 0.75
+        width: 15.25
+        height: 9.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89053465b265d941adcaac1d98a7e7a
+      internalID: 232626771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -30.5, y: 18.5}
+      - {x: -30.5, y: -18.5}
+      - {x: 30.5, y: -18.5}
+      - {x: 30.5, y: 18.5}
+    physicsShape:
+    - - {x: 28.5, y: -17.5}
+      - {x: 28.5, y: -18.5}
+      - {x: -28.5, y: -18.5}
+      - {x: -28.5, y: -17.5}
+      - {x: -29.5, y: -17.5}
+      - {x: -29.5, y: -16.5}
+      - {x: -30.5, y: -16.5}
+      - {x: -30.5, y: 16.5}
+      - {x: -29.5, y: 16.5}
+      - {x: -29.5, y: 17.5}
+      - {x: -28.5, y: 17.5}
+      - {x: -28.5, y: 18.5}
+      - {x: 28.5, y: 18.5}
+      - {x: 28.5, y: 17.5}
+      - {x: 29.5, y: 17.5}
+      - {x: 29.5, y: 16.5}
+      - {x: 30.5, y: 16.5}
+      - {x: 30.5, y: -16.5}
+      - {x: 29.5, y: -16.5}
+      - {x: 29.5, y: -17.5}
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sprPoolTable_0: 1339986297
+      sprPoolTable_1: -929410188
+      sprPoolTable_10: 2084568686
+      sprPoolTable_11: -1396722202
+      sprPoolTable_12: -605819060
+      sprPoolTable_13: -3512534
+      sprPoolTable_14: -282145223
+      sprPoolTable_15: 232626771
+      sprPoolTable_2: 173512599
+      sprPoolTable_3: -1206911027
+      sprPoolTable_4: 892859713
+      sprPoolTable_5: -44999763
+      sprPoolTable_6: -1446013370
+      sprPoolTable_7: 1215507942
+      sprPoolTable_8: 1534505430
+      sprPoolTable_9: 1357518611
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
