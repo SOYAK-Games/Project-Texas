@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pistol
   - Enemy
+  - World
   layers:
   - Default
   - TransparentFX

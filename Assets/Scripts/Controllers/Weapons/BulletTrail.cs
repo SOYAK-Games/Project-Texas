@@ -11,8 +11,7 @@ public class BulletTrail : MonoBehaviour
     {
         _startPosition = transform.position.WithAxis(Axis.Z, -1);
     }
-
-    // Update is called once per frame
+    
     private void Update()
     {
         _progress += Time.deltaTime * Speed;

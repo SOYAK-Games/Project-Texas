@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Data.ValueObjects;
@@ -14,8 +15,7 @@ public class PlayerWeaponController : MonoBehaviour
     [SerializeField] private float _weaponRange = 15f;
     [SerializeField] private float weaponThrowRange = 8f;
     [SerializeField] private Transform _gunPoint;
-    private GameObject PistolOnGround;
-    internal bool a = false;
+    private GameObject CollectiblePistol;
 
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -24,12 +24,12 @@ public class PlayerWeaponController : MonoBehaviour
             if (Input.GetMouseButton(1))
             {
                 GrabPistol();
-                PistolOnGround = other.gameObject;
-                PistolOnGround.SetActive(false);
+                CollectiblePistol = other.gameObject;
+                CollectiblePistol.SetActive(false);
             }
-
         }
     }
+
     private void GrabPistol()
     {
         PlayerHasPistol = true;
@@ -74,17 +74,26 @@ public class PlayerWeaponController : MonoBehaviour
             trailscript.SetTargetPosition(hit.point);
             var hittable = hit.collider.GetComponent<IHittable>();
             hittable?.ReceiveHit();
+            
+            CollectiblePistol.transform.position = hit.point;
+            CollectiblePistol.SetActive(true);
         }
         else
         {
             var endPosition = _gunPoint.position + transform.right * weaponThrowRange;
             trailscript.SetTargetPosition(endPosition);
 
-            PistolOnGround.transform.position = endPosition;
-            PistolOnGround.SetActive(true);
+            CollectiblePistol.transform.position = endPosition;
+            CollectiblePistol.SetActive(true);
         }
 
     }
+
+    public void UnarmedAttack()
+    {
+        
+    }
+    
 
     private interface IHittable
     {
