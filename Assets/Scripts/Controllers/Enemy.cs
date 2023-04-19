@@ -8,8 +8,10 @@ public class Enemy : MonoBehaviour, IHittable
     [SerializeField] private Transform Player;
     [SerializeField] private int hitPoints;
     private IHittable _hittableImplementation;
+    
 
-    public void ReceiveHit(RaycastHit2D hit)
+
+        public void ReceiveHit(RaycastHit2D hit)
         {
             Debug.Log("hit acquired");
             Instantiate(_blood, hit.point, Quaternion.Euler(hit.normal));
