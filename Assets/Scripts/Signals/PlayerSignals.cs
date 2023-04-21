@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 namespace Signals
 {
-    public class CoreGameSignals : MonoSingleton<CoreGameSignals>
+    public class PlayerSignals : MonoSingleton<PlayerSignals>
     {
         public UnityAction onUnarmedIdle = delegate { };
         public UnityAction onUnarmedMove = delegate { };

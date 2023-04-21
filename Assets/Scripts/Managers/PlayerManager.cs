@@ -1,13 +1,9 @@
-using Controllers;
 using Controllers.Player;
-using Data;
 using Data.UnityObjects;
 using Data.ValueObjects;
 using Signals;
 using Sirenix.OdinInspector;
-using Unity.VisualScripting;
 using UnityEngine;
-using Update = Unity.VisualScripting.Update;
 
 namespace Managers
 {
@@ -38,12 +34,12 @@ namespace Managers
         }
         private void SubscribeEvents()
         {
-            CoreGameSignals.Instance.onUnarmedMove += OnUnarmedMove;
-            CoreGameSignals.Instance.onUnarmedIdle += OnUnarmedIdle;
-            CoreGameSignals.Instance.onPistolShoot += OnPistolShoot;
-            CoreGameSignals.Instance.onPistolIdle += OnPistolIdle;
-            CoreGameSignals.Instance.onPistolMove += OnPistolMove;
-            CoreGameSignals.Instance.onUnarmedAttack += OnUnarmedAttack;
+            PlayerSignals.Instance.onUnarmedMove += OnUnarmedMove;
+            PlayerSignals.Instance.onUnarmedIdle += OnUnarmedIdle;
+            PlayerSignals.Instance.onPistolShoot += OnPistolShoot;
+            PlayerSignals.Instance.onPistolIdle += OnPistolIdle;
+            PlayerSignals.Instance.onPistolMove += OnPistolMove;
+            PlayerSignals.Instance.onUnarmedAttack += OnUnarmedAttack;
             InputSignals.Instance.onLeftMouseInput += OnLeftMouseInputTaken;
             InputSignals.Instance.onRightMouseInput += OnRightMouseInputTaken;
             InputSignals.Instance.onInputTaken += OnInputTaken;
@@ -51,12 +47,12 @@ namespace Managers
         }
         private void UnSubscribeEvents()
         {
-            CoreGameSignals.Instance.onUnarmedMove -= OnUnarmedMove;
-            CoreGameSignals.Instance.onUnarmedIdle -= OnUnarmedIdle;
-            CoreGameSignals.Instance.onPistolShoot -= OnPistolShoot;
-            CoreGameSignals.Instance.onPistolIdle -= OnPistolIdle;
-            CoreGameSignals.Instance.onPistolMove -= OnPistolMove;
-            CoreGameSignals.Instance.onUnarmedAttack -= OnUnarmedAttack;
+            PlayerSignals.Instance.onUnarmedMove -= OnUnarmedMove;
+            PlayerSignals.Instance.onUnarmedIdle -= OnUnarmedIdle;
+            PlayerSignals.Instance.onPistolShoot -= OnPistolShoot;
+            PlayerSignals.Instance.onPistolIdle -= OnPistolIdle;
+            PlayerSignals.Instance.onPistolMove -= OnPistolMove;
+            PlayerSignals.Instance.onUnarmedAttack -= OnUnarmedAttack;
             InputSignals.Instance.onLeftMouseInput -= OnLeftMouseInputTaken;
             InputSignals.Instance.onRightMouseInput -= OnRightMouseInputTaken;
             InputSignals.Instance.onInputTaken -= OnInputTaken;
@@ -124,6 +120,11 @@ namespace Managers
             if (weaponController.PlayerHasPistol==true) // pistol yoksa pistolü al
             {
                 weaponController.ThrowPistol();
+            }
+
+            if (weaponController.isPistolInputTaken == true)
+            {
+                weaponController.GrabPistol();
             }
             else
             {

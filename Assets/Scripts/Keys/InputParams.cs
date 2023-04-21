@@ -1,6 +1,6 @@
 namespace Keys
 {
-    public struct InputParams
+    public struct KeyboardInputParams
     {
         public bool WKey;
         public bool AKey;

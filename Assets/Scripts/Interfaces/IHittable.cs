@@ -4,7 +4,6 @@ namespace Interfaces
 {
     public interface IHittable
     {
-        public void ReceiveHit(RaycastHit2D hit);
-
+        public void ReceiveHit();
     }
 }

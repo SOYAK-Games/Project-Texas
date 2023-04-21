@@ -1,12 +1,8 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Data.ValueObjects;
-using Managers;
-using Sirenix.OdinInspector;
+using Interfaces;
 using UnityEngine;
 
-public class PlayerWeaponController : MonoBehaviour
+public class PlayerWeaponController : MonoBehaviour, IHittable
 {
     public bool PlayerHasPistol = false;
     [SerializeField] private PlayerAnimationController animationController;
@@ -15,7 +11,12 @@ public class PlayerWeaponController : MonoBehaviour
     [SerializeField] private float _weaponRange = 15f;
     [SerializeField] private float weaponThrowRange = 8f;
     [SerializeField] private Transform _gunPoint;
+    private Enemy EnemyScript;
+    private int hitPoints;
     private GameObject CollectiblePistol;
+    public bool isPistolInputTaken = false;
+
+
 
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -23,6 +24,7 @@ public class PlayerWeaponController : MonoBehaviour
         {
             if (Input.GetMouseButton(1))
             {
+                isPistolInputTaken = true;
                 GrabPistol();
                 CollectiblePistol = other.gameObject;
                 CollectiblePistol.SetActive(false);
@@ -30,10 +32,11 @@ public class PlayerWeaponController : MonoBehaviour
         }
     }
 
-    private void GrabPistol()
+    internal void GrabPistol()
     {
         PlayerHasPistol = true;
         animationController.Animator.SetBool("PlayerHasPistol", true);
+        isPistolInputTaken = false;
     }
 
     internal void ThrowPistol()
@@ -54,7 +57,7 @@ public class PlayerWeaponController : MonoBehaviour
                 var hittable = hit.collider.GetComponent<IHittable>();
                 if (hittable != null)
                 {
-                    hittable.ReceiveHit();
+                    hittable?.ReceiveHit();
                 }
             }
             else
@@ -86,18 +89,17 @@ public class PlayerWeaponController : MonoBehaviour
             CollectiblePistol.transform.position = endPosition;
             CollectiblePistol.SetActive(true);
         }
-
     }
 
-    public void UnarmedAttack()
+    public void ReceiveHit()
     {
+        hitPoints = EnemyScript.hitPoints;
         
-    }
-    
-
-    private interface IHittable
-    {
-        void ReceiveHit();
+        hitPoints -= 2;
+        if (hitPoints <= 0)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }
     

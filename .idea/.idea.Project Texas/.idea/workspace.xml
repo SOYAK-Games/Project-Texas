@@ -3,17 +3,110 @@
   <component name="ChangeListManager">
     <list default="true" id="c4990178-2140-42a3-913a-d623a2f7ea1e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Texas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Texas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Prefabs/ThrownWeapon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Prefabs/ThrownWeapon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/Furniture/sprArmchair.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/Furniture/sprArmchair.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/Furniture/sprSofa.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/Furniture/sprSofa.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Tile Palettes/Furniture/Furnitures.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Tile Palettes/Furniture/Furnitures.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Player/PlayerAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Player/PlayerAnimationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Tile Palettes/Walls/Wall Tilemap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Tile Palettes/Walls/Wall Tilemap.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/Gizmos.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/Gizmos/NavMeshLink Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/Gizmos/NavMeshLink Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/Gizmos/NavMeshModifierVolume Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/Gizmos/NavMeshModifierVolume Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/Gizmos/NavMeshSurface Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/Gizmos/NavMeshSurface Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/Gizmos/NavMeshSurface2d Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/Gizmos/NavMeshSurface2d Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/LICENSE.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/AgentOverride2dEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/AgentOverride2dEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/CollectSources2dEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/CollectSources2dEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/CollectSourcesCache2dEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/CollectSourcesCache2dEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshAssetManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshAssetManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshAssetManager2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshAssetManager2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshLinkEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshLinkEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshModifierEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshModifierEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshSurfaceEditor2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/NavMeshSurfaceEditor2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/RootSources2dEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor/RootSources2dEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/AgentOverride2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/AgentOverride2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/AgentRotate2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/AgentRotate2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/AgentRotateSmooth2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/AgentRotateSmooth2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/CollectSources2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/CollectSources2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/CollectSourcesCache2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/CollectSourcesCache2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshBuilder2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshBuilder2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshBuilderState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshBuilderState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshComponents.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshExtension.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshExtensionsProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshExtensionsProvider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshLink.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshLink.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshModifier.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshModifier.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshModifierVolume.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshModifierVolume.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshSurface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshSurface.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshSurface2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/NavMeshSurface2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/RootSources2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/RootSources2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/RotateAgentInstantly.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/RotateAgentInstantly.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/RotateAgentSmoothly.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Scripts/RotateAgentSmoothly.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/README.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/Unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/Unity/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/Unity/LICENSE.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/Unity/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/Unity/README.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/navmeshplus.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/navmeshplus.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/package.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene 1/NavMesh-NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene 1/NavMesh-NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene 1/NavMesh-NavMesh.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene 1/NavMesh-NavMesh.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Player/PlayerMovementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Player/PlayerMovementController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Player/PlayerWeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Player/PlayerWeaponController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Weapons/BulletTrail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Weapons/BulletTrail.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Weapons/MeleeAttackController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Weapons/MeleeAttackController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IHittable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IHittable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Keys/InputParams.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Keys/InputParams.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Signals/CoreGameSignals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Signals/CoreGameSignals.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Signals/CoreGameSignals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Signals/PlayerSignals.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Signals/CoreGameSignals.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Signals/PlayerSignals.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Signals/InputSignals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Signals/InputSignals.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,10 +186,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14704">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="14704" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
