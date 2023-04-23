@@ -188,6 +188,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Punch_4
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 6
+        width: 31
+        height: 21
+      alignment: 9
+      pivot: {x: 0.24488683, y: 0.5171181}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ceb51d382218343ac5b1093018dd9e
+      internalID: -296875519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punch_5
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 4
+        width: 21
+        height: 24
+      alignment: 9
+      pivot: {x: 0.32026163, y: 0.5074894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ac2bbec16cc43479f97e71355369ca
+      internalID: -19302702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punch_6
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 4
+        width: 17
+        height: 24
+      alignment: 9
+      pivot: {x: 0.44713637, y: 0.50000024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c16aa03403c9944bf4f6a93383130d
+      internalID: -1240358805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -205,6 +268,7 @@ TextureImporter:
       Punch_3: -515798325
       Punch_4: -296875519
       Punch_5: -19302702
+      Punch_6: -1240358805
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

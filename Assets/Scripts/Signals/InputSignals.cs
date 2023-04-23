@@ -6,9 +6,8 @@ namespace Signals
 {
     public class InputSignals : MonoSingleton<InputSignals>
     {
-
-        public UnityAction onInputTaken = delegate { };
-        public UnityAction onInputReleased = delegate { };
+        public UnityAction onKeyboardInputTaken = delegate { };
+        public UnityAction onKeyboardInputReleased = delegate { };
         public UnityAction onLeftMouseInput = delegate { };
         public UnityAction onRightMouseInput = delegate {  };
     }

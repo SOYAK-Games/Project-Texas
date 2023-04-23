@@ -1,3 +1,4 @@
+using System;
 using Controllers.Player;
 using Data.UnityObjects;
 using Data.ValueObjects;
@@ -12,104 +13,93 @@ namespace Managers
         [SerializeField] private PlayerMovementController movementController;
         [SerializeField] private PlayerWeaponController weaponController;
         [SerializeField] private PlayerAnimationController animationController;
-        [SerializeField] private MeleeAttackController meleeController;
         [ShowInInspector] private PlayerData _data;
-        
+
         private void Awake()
         {
             _data = GetPlayerData();
             SendDataToControllers();
+
         }
+
+        private void Update()
+        {
+            PlayerAnimation();
+        }
+
         private PlayerData GetPlayerData()
         {
             return Resources.Load<CD_Player>("Data/CD_Player").Data;
         }
+
         private void SendDataToControllers()
         {
             movementController.GetMovementData(_data.MovementData);
         }
+
         private void OnEnable()
         {
             SubscribeEvents();
         }
+
         private void SubscribeEvents()
         {
-            PlayerSignals.Instance.onUnarmedMove += OnUnarmedMove;
-            PlayerSignals.Instance.onUnarmedIdle += OnUnarmedIdle;
-            PlayerSignals.Instance.onPistolShoot += OnPistolShoot;
-            PlayerSignals.Instance.onPistolIdle += OnPistolIdle;
-            PlayerSignals.Instance.onPistolMove += OnPistolMove;
-            PlayerSignals.Instance.onUnarmedAttack += OnUnarmedAttack;
+            PlayerSignals.Instance.onAnimation += PlayerAnimation;
             InputSignals.Instance.onLeftMouseInput += OnLeftMouseInputTaken;
             InputSignals.Instance.onRightMouseInput += OnRightMouseInputTaken;
-            InputSignals.Instance.onInputTaken += OnInputTaken;
-            InputSignals.Instance.onInputReleased += OnInputReleased;
+            InputSignals.Instance.onKeyboardInputTaken += OnKeyboardInputTaken;
+            InputSignals.Instance.onKeyboardInputReleased += OnKeyboardInputReleased;
         }
+
         private void UnSubscribeEvents()
         {
-            PlayerSignals.Instance.onUnarmedMove -= OnUnarmedMove;
-            PlayerSignals.Instance.onUnarmedIdle -= OnUnarmedIdle;
-            PlayerSignals.Instance.onPistolShoot -= OnPistolShoot;
-            PlayerSignals.Instance.onPistolIdle -= OnPistolIdle;
-            PlayerSignals.Instance.onPistolMove -= OnPistolMove;
-            PlayerSignals.Instance.onUnarmedAttack -= OnUnarmedAttack;
+            PlayerSignals.Instance.onAnimation -= PlayerAnimation;
             InputSignals.Instance.onLeftMouseInput -= OnLeftMouseInputTaken;
             InputSignals.Instance.onRightMouseInput -= OnRightMouseInputTaken;
-            InputSignals.Instance.onInputTaken -= OnInputTaken;
-            InputSignals.Instance.onInputReleased -= OnInputReleased;
+            InputSignals.Instance.onKeyboardInputTaken -= OnKeyboardInputTaken;
+            InputSignals.Instance.onKeyboardInputReleased -= OnKeyboardInputReleased;
         }
+
         private void OnDisable()
         {
             UnSubscribeEvents();
         }
-        private void OnUnarmedMove()
+
+        private void PlayerAnimation()
         {
-            animationController.PlayPlayerUnarmedMoving();
+            animationController.PlayAnimation();
         }
-        private void OnUnarmedIdle()
-        {
-            animationController.PlayPlayerUnarmedIdle();
-        }
-        private void OnPistolShoot()
-        {
-            animationController.PlayPlayerShooting();
-        }
-        private void OnPistolIdle()
-        {
-            animationController.PlayPlayerPistolIdle();
-        }
-        private void OnPistolMove()
-        {
-            animationController.PlayPlayerPistolMoving();
-        }
-        private void OnUnarmedAttack()
-        {
-            animationController.PlayPlayerUnarmedAttack();
-        }
+
         private void OnLeftMouseInputTaken()
         {
             if (weaponController.PlayerHasPistol == true) // Uzak Dövüş
             {
-                if (animationController.Animator.GetCurrentAnimatorStateInfo(0).IsName("PlayerPistolShoot") && Input.GetMouseButtonDown(0))
+                if (animationController.animator.GetCurrentAnimatorStateInfo(0).IsName("PlayerPistolShoot") &&
+                    Input.GetMouseButtonDown(0))
                 {
                     return;
                 }
-                else
+                if(Input.GetMouseButtonDown(0))
                 {
+                    animationController.PlayerHasPistol = true;
+                    animationController.PlayerAttacking = true;
+                    animationController.PlayAnimation();
                     weaponController.Shoot();
-                    animationController.PlayPlayerShooting();
+
                 }
             }
-
             if (weaponController.PlayerHasPistol == false && Input.GetMouseButtonDown(0)) // Yakın Dövüş
             {
-                if (animationController.Animator.GetCurrentAnimatorStateInfo(0).IsName("PlayerUnarmedAttack") && Input.GetMouseButtonDown(0))
+                if (animationController.animator.GetCurrentAnimatorStateInfo(0).IsName("PlayerUnarmedAttack") &&
+                    Input.GetMouseButtonDown(0))
                 {
                     return;
                 }
-                else
+                if(Input.GetMouseButtonDown(0))
                 {
-                    animationController.PlayPlayerUnarmedAttack();   
+                    animationController.PlayerHasPistol = false;
+                    animationController.PlayerAttacking = true;
+                    animationController.PlayAnimation();
                 }
 
             }
@@ -117,14 +107,19 @@ namespace Managers
 
         private void OnRightMouseInputTaken()
         {
-            if (weaponController.PlayerHasPistol==true) // pistol yoksa pistolü al
+            if (weaponController.PlayerHasPistol == true) // pistol varsa pistolü at
             {
                 weaponController.ThrowPistol();
+                weaponController.PlayerHasPistol = false;
+                animationController.PlayerHasPistol = false;
             }
 
-            if (weaponController.isPistolInputTaken == true)
+            if (weaponController.PlayerHasPistol == false &&
+                weaponController.IsPlayerOnTopOfPistol == true) // pistol yoksa pistolü al
             {
                 weaponController.GrabPistol();
+                weaponController.PlayerHasPistol = true;
+                animationController.PlayerHasPistol = true;
             }
             else
             {
@@ -132,31 +127,44 @@ namespace Managers
             }
 
         }
-        private void OnInputTaken()
+
+        private void OnKeyboardInputTaken()
         {
             if (weaponController.PlayerHasPistol == false)
             {
                 movementController.PlayerMovementInput = true;
-                animationController.PlayPlayerUnarmedMoving();
+                animationController.PlayerHasPistol = false;
+                animationController.PlayerMoving = true;
+
+                animationController.PlayAnimation();
             }
             if (weaponController.PlayerHasPistol == true)
             {
+                animationController.PlayerHasPistol = true;
                 movementController.PlayerMovementInput = true;
-                animationController.PlayPlayerPistolMoving();
+                animationController.PlayerMoving = true;
+                animationController.PlayAnimation();
             }
         }
 
-        private void OnInputReleased()
+        private void OnKeyboardInputReleased()
         {
             if (weaponController.PlayerHasPistol == false)
             {
+                animationController.PlayerHasPistol = false;
                 movementController.PlayerMovementInput = false;
-                animationController.PlayPlayerUnarmedIdle();
+                animationController.PlayerMoving = false;
+                animationController.PlayerAttacking = false;
+                animationController.PlayAnimation();
             }
+
             if (weaponController.PlayerHasPistol == true)
             {
+                animationController.PlayerHasPistol = true;
                 movementController.PlayerMovementInput = false;
-                animationController.PlayPlayerPistolIdle();
+                animationController.PlayerMoving = false;
+                animationController.PlayerAttacking = false;
+                animationController.PlayAnimation();
             }
         }
     }

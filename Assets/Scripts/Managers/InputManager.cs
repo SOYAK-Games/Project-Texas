@@ -15,46 +15,37 @@ namespace Managers
 {
     public class InputManager : MonoBehaviour
     {
-        #region Private Variables
-
-        
         //[ShowInInspector] private InputData _data;
-
-        #endregion
         
-
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.W) | Input.GetKeyDown(KeyCode.A) | Input.GetKeyDown(KeyCode.S) |
                 Input.GetKeyDown(KeyCode.D))
             {
-                OnInputTaken();
+                OnKeyboardInputTaken();
             }
-
             if (Input.GetKey(KeyCode.D) != true && Input.GetKey(KeyCode.W) != true && Input.GetKey(KeyCode.S) != true &&
                 Input.GetKey(KeyCode.A) != true)
             {
-                OnInputReleased();
+                OnKeyboardInputReleased();
             }
             if (Input.GetMouseButtonDown(0))
             {
                 LeftMouseInputTaken();
             }
-
             if (Input.GetMouseButtonDown(1))
             {
                 RightMouseInputTaken();
             }
         }
         
-        private void OnInputTaken()
+        private void OnKeyboardInputTaken()
         {
-            InputSignals.Instance.onInputTaken?.Invoke();
+            InputSignals.Instance.onKeyboardInputTaken?.Invoke();
         }
-
-        private void OnInputReleased()
+        private void OnKeyboardInputReleased()
         {
-            InputSignals.Instance.onInputReleased?.Invoke();
+            InputSignals.Instance.onKeyboardInputReleased?.Invoke();
         }
 
         private void LeftMouseInputTaken()
@@ -64,6 +55,7 @@ namespace Managers
         private void RightMouseInputTaken()
         {
             InputSignals.Instance.onRightMouseInput?.Invoke();
+
         }
     }
 }

@@ -8,6 +8,7 @@ namespace Data.ValueObjects
         public MovementData MovementData;
     }
     [Serializable] public struct MovementData
+    
     {
         public float Speed;
 
@@ -16,6 +17,4 @@ namespace Data.ValueObjects
             Speed = movementSpeed;
         }
     }
-
-
 }

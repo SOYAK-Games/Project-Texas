@@ -1,35 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
-using Managers;
 using Sirenix.OdinInspector;
-using System;
-using Data;
 using Data.ValueObjects;
-using Signals;
-using Unity.Mathematics;
 using UnityEngine;
 
 namespace Controllers.Player
 {
     public class PlayerMovementController : MonoBehaviour
     {
-        #region Self Variables
-
-        #region Serialized Variables
-        
         [SerializeField] public Rigidbody2D rigidbody;
         [SerializeField] public bool PlayerMovementInput = false;
-
-        #endregion
-
-        #region Private Variables
-
         [ShowInInspector] private MovementData _data;
-        
-        #endregion
 
-        #endregion
-        
         internal void GetMovementData(MovementData movementData)
         {
             _data = movementData;

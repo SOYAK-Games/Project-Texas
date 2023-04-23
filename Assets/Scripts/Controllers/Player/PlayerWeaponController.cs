@@ -14,36 +14,36 @@ public class PlayerWeaponController : MonoBehaviour, IHittable
     private Enemy EnemyScript;
     private int hitPoints;
     private GameObject CollectiblePistol;
-    public bool isPistolInputTaken = false;
 
-
-
+    public bool IsPlayerOnTopOfPistol = false;
+    
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Pistol"))
         {
-            if (Input.GetMouseButton(1))
-            {
-                isPistolInputTaken = true;
-                GrabPistol();
-                CollectiblePistol = other.gameObject;
-                CollectiblePistol.SetActive(false);
-            }
+            IsPlayerOnTopOfPistol = true;
+            CollectiblePistol = other.gameObject;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Pistol"))
+        {
+            IsPlayerOnTopOfPistol = false;
         }
     }
 
     internal void GrabPistol()
     {
         PlayerHasPistol = true;
-        animationController.Animator.SetBool("PlayerHasPistol", true);
-        isPistolInputTaken = false;
+        CollectiblePistol.SetActive(false);
     }
 
     internal void ThrowPistol()
     {
-        PlayerHasPistol = false;
-        animationController.Animator.SetBool("PlayerHasPistol", false);
         WeaponThrow();
+        PlayerHasPistol = false;
     }
 
     public void Shoot()
@@ -69,25 +69,28 @@ public class PlayerWeaponController : MonoBehaviour, IHittable
 
     private void WeaponThrow()
     {
-        var hit = Physics2D.Raycast(_gunPoint.position, transform.right, weaponThrowRange);
-        var trail = Instantiate(pistol, _gunPoint.position, transform.rotation);
-        var trailscript = trail.GetComponent<BulletTrail>();
-        if (hit.collider != null)
+        if (PlayerHasPistol == true)
         {
-            trailscript.SetTargetPosition(hit.point);
-            var hittable = hit.collider.GetComponent<IHittable>();
-            hittable?.ReceiveHit();
-            
-            CollectiblePistol.transform.position = hit.point;
-            CollectiblePistol.SetActive(true);
-        }
-        else
-        {
-            var endPosition = _gunPoint.position + transform.right * weaponThrowRange;
-            trailscript.SetTargetPosition(endPosition);
+            var hit = Physics2D.Raycast(_gunPoint.position, transform.right, weaponThrowRange);
+            var trail = Instantiate(pistol, _gunPoint.position, transform.rotation);
+            var trailscript = trail.GetComponent<BulletTrail>();
+            if (hit.collider != null)
+            {
+                trailscript.SetTargetPosition(hit.point);
+                var hittable = hit.collider.GetComponent<IHittable>();
+                hittable?.ReceiveHit();
 
-            CollectiblePistol.transform.position = endPosition;
-            CollectiblePistol.SetActive(true);
+                CollectiblePistol.transform.position = hit.point;
+                CollectiblePistol.SetActive(true);
+            }
+            else
+            {
+                var endPosition = _gunPoint.position + transform.right * weaponThrowRange;
+                trailscript.SetTargetPosition(endPosition);
+
+                CollectiblePistol.transform.position = endPosition;
+                CollectiblePistol.SetActive(true);
+            }
         }
     }
 

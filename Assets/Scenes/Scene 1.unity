@@ -165,6 +165,7 @@ GameObject:
   - component: {fileID: 182215375}
   - component: {fileID: 182215374}
   - component: {fileID: 182215373}
+  - component: {fileID: 182215377}
   m_Layer: 0
   m_Name: Pistol (Collectible)
   m_TagString: Pistol
@@ -255,6 +256,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &182215377
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182215371}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &326938930
 GameObject:
   m_ObjectHideFlags: 0
@@ -13190,7 +13212,6 @@ MonoBehaviour:
   movementController: {fileID: 1098357683}
   weaponController: {fileID: 1098357688}
   animationController: {fileID: 1992564737}
-  meleeController: {fileID: 0}
 --- !u!58 &1098357686
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13247,7 +13268,7 @@ MonoBehaviour:
   _weaponRange: 15
   weaponThrowRange: 8
   _gunPoint: {fileID: 1947417977}
-  isPistolInputTaken: 0
+  IsPlayerOnTopOfPistol: 0
 --- !u!70 &1098357689
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -13275,7 +13296,7 @@ GameObject:
   - component: {fileID: 1185506676}
   - component: {fileID: 1185506677}
   m_Layer: 0
-  m_Name: CoreGameSignals
+  m_Name: PlayerSignals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14494,7 +14515,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab85aec9ebf8294a8c66dc017c1af45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 1992564736}
+  animator: {fileID: 1992564736}
+  CurrentState: 
 --- !u!1 &2059229478
 GameObject:
   m_ObjectHideFlags: 0

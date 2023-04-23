@@ -1,5 +1,6 @@
 using System;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Data.ValueObjects
@@ -7,8 +8,6 @@ namespace Data.ValueObjects
     [Serializable] public struct InputData
     {
         public bool W,A,S,D;
-
-
         public InputData(bool w,bool a,bool s,bool d)
         {
             W = w;
