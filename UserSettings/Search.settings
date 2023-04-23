@@ -7,7 +7,11 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
+<<<<<<< HEAD
 	"last_search.DA949528" = "Nav"
+=======
+	"last_search.DA949528" = ""
+>>>>>>> 8318aad4e4e6aa9b36523401c81b273cd45597ef
 	"OpenInspectorPreview.DA949528" = "0"
 	"currentGroup.DA949528" = "all"
 }

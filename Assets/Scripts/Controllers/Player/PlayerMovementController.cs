@@ -35,7 +35,11 @@ namespace Controllers.Player
             _data = movementData;
         }
 
+<<<<<<< HEAD
         private void LateUpdate()
+=======
+        private void FixedUpdate()
+>>>>>>> 8318aad4e4e6aa9b36523401c81b273cd45597ef
         {
             LookAtMouse();
             if (PlayerMovementInput == true)

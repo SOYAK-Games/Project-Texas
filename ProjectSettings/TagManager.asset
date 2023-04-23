@@ -6,7 +6,10 @@ TagManager:
   tags:
   - Pistol
   - Enemy
+<<<<<<< HEAD
   - World
+=======
+>>>>>>> 8318aad4e4e6aa9b36523401c81b273cd45597ef
   layers:
   - Default
   - TransparentFX

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c4990178-2140-42a3-913a-d623a2f7ea1e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Texas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Texas/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/Furniture/sprArmchair.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/Furniture/sprArmchair.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/Furniture/sprSofa.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/Furniture/sprSofa.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Tile Palettes/Furniture/Furnitures.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Tile Palettes/Furniture/Furnitures.prefab" afterDir="false" />
@@ -107,6 +108,41 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Signals/CoreGameSignals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Signals/PlayerSignals.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Signals/CoreGameSignals.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Signals/PlayerSignals.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Signals/InputSignals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Signals/InputSignals.cs" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Prefabs/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/Furniture/sprPoolTable.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Environment/Furniture/sprPoolTable.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Weapons/cross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Weapons/cross.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Tile Palettes/Floor/Floor Tilemap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Tile Palettes/Floor/Floor Tilemap.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Tile Palettes/Furniture/Furnitures.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Tile Palettes/Furniture/Furnitures.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Tile Palettes/Walls/Wall Tilemap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Tile Palettes/Walls/Wall Tilemap.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/CD_Player.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/CD_Player.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Player/PlayerWeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Player/PlayerWeaponController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Crosshair.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Crosshair.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LegMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LegMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Bullet.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Bullet.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/BulletTrail.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/BulletTrail.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/VectorsExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/VectorsExtension.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OldScripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OldScripts/GrabWeapon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OldScripts/GrabWeapon.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OldScripts/Player.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OldScripts/Player.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+>>>>>>> 8318aad4e4e6aa9b36523401c81b273cd45597ef
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +150,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+<<<<<<< HEAD
     <setting file="file://$USER_HOME$/Desktop/Gamejam Repo/Assets/Scripts/Attacks/Melee/MeleeAttackConfig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/Gamejam Repo/Assets/Scripts/Attacks/Melee/MeleeAttackController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/Gamejam Repo/Assets/Scripts/Items/PickupItem.cs" root0="SKIP_HIGHLIGHTING" />
@@ -127,6 +164,13 @@
     <setting file="file://$PROJECT_DIR$/../PT/Assets/Hotline Miami/Scripts/RotateToCursor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../PT/Assets/Hotline Miami/Scripts/ThrowWeapon.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../PT/Assets/Hotline Miami/Scripts/WeaponAttack.cs" root0="SKIP_HIGHLIGHTING" />
+=======
+    <setting file="file://$USER_HOME$/Desktop/Gamejam Repo/Assets/Scripts/Items/PickupItem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../PT/Assets/Hotline Miami/Scripts/CameraFollowPlayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../PT/Assets/Hotline Miami/Scripts/LegDirection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../PT/Assets/Hotline Miami/Scripts/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../PT/Assets/Hotline Miami/Scripts/RotateToCursor.cs" root0="SKIP_HIGHLIGHTING" />
+>>>>>>> 8318aad4e4e6aa9b36523401c81b273cd45597ef
     <setting file="file://$PROJECT_DIR$/../PT/Assets/Hotline Miami/Scripts/WeaponPickup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/math_unity_conversion.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.10/Runtime/UniversalRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
@@ -142,6 +186,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
@@ -159,6 +204,25 @@
     ]
   }
 }</component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\kaanu\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\kaanu\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\kaanu\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
+>>>>>>> 8318aad4e4e6aa9b36523401c81b273cd45597ef
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.21f1\Editor\Unity.exe" />
@@ -186,10 +250,17 @@
       </option>
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14704">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" value="14704" />
+=======
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+>>>>>>> 8318aad4e4e6aa9b36523401c81b273cd45597ef
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -230,6 +301,7 @@
       <workItem from="1680292402942" duration="595000" />
       <workItem from="1680434338757" duration="603000" />
       <workItem from="1680440060118" duration="6296000" />
+<<<<<<< HEAD
       <workItem from="1680555132118" duration="457000" />
       <workItem from="1680555677077" duration="1181000" />
       <workItem from="1680556996582" duration="3236000" />
@@ -240,6 +312,8 @@
       <workItem from="1680789093281" duration="661000" />
       <workItem from="1680854143766" duration="1661000" />
       <workItem from="1680969492290" duration="411000" />
+=======
+>>>>>>> 8318aad4e4e6aa9b36523401c81b273cd45597ef
     </task>
     <servers />
   </component>

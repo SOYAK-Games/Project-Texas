@@ -11,14 +11,21 @@ public class PlayerAnimationController : MonoBehaviour
     internal void PlayPlayerShooting()
     {
         Animator.Play("PlayerPistolShoot");
+<<<<<<< HEAD
         Animator.SetBool("PlayerMoving", false);
+=======
+            Animator.SetBool("PlayerMoving", false);
+>>>>>>> 8318aad4e4e6aa9b36523401c81b273cd45597ef
     }
 
     internal void PlayPlayerUnarmedIdle()
     {
         Animator.SetBool("PlayerMoving", false);
         Animator.SetBool("PlayerHasPistol", false);
+<<<<<<< HEAD
         Animator.SetBool("UnarmedAttack", false);
+=======
+>>>>>>> 8318aad4e4e6aa9b36523401c81b273cd45597ef
     }
     internal void PlayPlayerPistolIdle()
     {
@@ -28,12 +35,16 @@ public class PlayerAnimationController : MonoBehaviour
     internal void PlayPlayerUnarmedMoving()
     {
         Animator.SetBool("PlayerMoving", true);
+<<<<<<< HEAD
         Animator.SetBool("UnarmedAttack", false);
+=======
+>>>>>>> 8318aad4e4e6aa9b36523401c81b273cd45597ef
     }
     internal void PlayPlayerPistolMoving()
     {
         Animator.SetBool("PlayerMoving", true);
     }
+<<<<<<< HEAD
     internal void PlayPlayerUnarmedAttack()
     {
         Animator.SetBool("UnarmedAttack", true);
@@ -45,5 +56,7 @@ public class PlayerAnimationController : MonoBehaviour
         Animator.SetBool("PlayerMoving", true);
         Animator.SetBool("UnarmedAttack", true);
     }
+=======
+>>>>>>> 8318aad4e4e6aa9b36523401c81b273cd45597ef
     
 }
