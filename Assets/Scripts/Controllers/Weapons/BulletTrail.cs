@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class BulletTrail : MonoBehaviour
@@ -5,6 +6,8 @@ public class BulletTrail : MonoBehaviour
     private Vector3 _startPosition;
     private Vector3 _targetPosition;
     private float _progress;
+    private Rigidbody2D _rigidbody2D;
+
 
     [SerializeField] private float Speed;
     private void Start()

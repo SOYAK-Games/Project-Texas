@@ -10,6 +10,7 @@ using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem.LowLevel;
 
 namespace Managers
 {
@@ -33,6 +34,11 @@ namespace Managers
             {
                 LeftMouseInputTaken();
             }
+
+            if (Input.GetMouseButtonUp(0))
+            {
+                LeftMouseInputReleased();
+            }
             if (Input.GetMouseButtonDown(1))
             {
                 RightMouseInputTaken();
@@ -52,10 +58,13 @@ namespace Managers
         {
             InputSignals.Instance.onLeftMouseInput?.Invoke();
         }
+        private void LeftMouseInputReleased()
+        {
+            InputSignals.Instance.onLeftMouseInputReleased?.Invoke();
+        }
         private void RightMouseInputTaken()
         {
             InputSignals.Instance.onRightMouseInput?.Invoke();
-
         }
     }
 }

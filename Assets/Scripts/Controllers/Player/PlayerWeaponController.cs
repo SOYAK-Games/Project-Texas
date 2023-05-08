@@ -8,7 +8,7 @@ public class PlayerWeaponController : MonoBehaviour, IHittable
     [SerializeField] private PlayerAnimationController animationController;
     [SerializeField] private GameObject _bulletTrail;
     [SerializeField] private GameObject pistol;
-    [SerializeField] private float _weaponRange = 15f;
+    [SerializeField] private float _weaponRange = 20f;
     [SerializeField] private float weaponThrowRange = 8f;
     [SerializeField] private Transform _gunPoint;
     private Enemy EnemyScript;
@@ -80,6 +80,7 @@ public class PlayerWeaponController : MonoBehaviour, IHittable
                 var hittable = hit.collider.GetComponent<IHittable>();
                 hittable?.ReceiveHit();
 
+
                 CollectiblePistol.transform.position = hit.point;
                 CollectiblePistol.SetActive(true);
             }
@@ -87,7 +88,7 @@ public class PlayerWeaponController : MonoBehaviour, IHittable
             {
                 var endPosition = _gunPoint.position + transform.right * weaponThrowRange;
                 trailscript.SetTargetPosition(endPosition);
-
+                
                 CollectiblePistol.transform.position = endPosition;
                 CollectiblePistol.SetActive(true);
             }
@@ -104,5 +105,6 @@ public class PlayerWeaponController : MonoBehaviour, IHittable
             gameObject.SetActive(false);
         }
     }
+
 }
     

@@ -4,25 +4,22 @@
     <list default="true" id="c4990178-2140-42a3-913a-d623a2f7ea1e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Texas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Texas/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/PlayerIdleBreathing.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/PlayerIdleBreathing.anim.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/PlayerPistolIdle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/PlayerPistolIdle.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/PlayerPistolShoot.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/PlayerPistolShoot.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/PlayerPistolWalk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/PlayerPistolWalk.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/PlayerUnarmedAttack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/PlayerUnarmedAttack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Wall Physics Material.physicsMaterial2D" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Wall Physics Material.physicsMaterial2D" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/PlayerUnarmedWalk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/PlayerUnarmedWalk.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Prefabs/ThrownWeapon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Prefabs/ThrownWeapon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Sprites/Player/Punch.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Sprites/Player/Punch.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/ValueObjects/InputData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/ValueObjects/InputData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/ValueObjects/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/ValueObjects/PlayerData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Player/PlayerAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Player/PlayerAnimationController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Player/PlayerMovementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Player/PlayerMovementController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Player/PlayerWeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Player/PlayerWeaponController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Weapons/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Weapons/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/Weapons/BulletTrail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/Weapons/BulletTrail.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/PlayerManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Signals/InputSignals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Signals/InputSignals.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Signals/PlayerSignals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Signals/PlayerSignals.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +74,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/asd\Project Texas.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\kaanu\Desktop\asd" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.21f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;E:\Project Texas&quot; -debugCodeOptimization" />
@@ -162,6 +167,13 @@
       <workItem from="1682257130413" duration="3210000" />
       <workItem from="1682262489635" duration="91000" />
       <workItem from="1682267107241" duration="3933000" />
+      <workItem from="1682329287003" duration="4404000" />
+      <workItem from="1682508506269" duration="61000" />
+      <workItem from="1682717090615" duration="6633000" />
+      <workItem from="1682753863425" duration="1079000" />
+      <workItem from="1682854577958" duration="1370000" />
+      <workItem from="1683540620057" duration="5556000" />
+      <workItem from="1683563656598" duration="741000" />
     </task>
     <servers />
   </component>

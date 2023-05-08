@@ -22,14 +22,6 @@ public class Bullet : MonoBehaviour
         _rigidbody.velocity = _mousePosition * Speed;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            
-        }
-    }
-
     private void AmmoRotation()
     {
         _camera = Camera.main;

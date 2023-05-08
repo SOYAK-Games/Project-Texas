@@ -544,7 +544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 656738b03aa14e46a7ffbcb5359f3ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 2
+  hitPoints: 1
 --- !u!50 &483171678
 Rigidbody2D:
   serializedVersion: 4
@@ -14391,7 +14391,7 @@ Transform:
   - {fileID: 569734508}
   - {fileID: 1691138077}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1992564730
 GameObject:
@@ -14516,7 +14516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1992564736}
-  CurrentState: 
+  currentState: 
 --- !u!1 &2059229478
 GameObject:
   m_ObjectHideFlags: 0
@@ -14581,5 +14581,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}

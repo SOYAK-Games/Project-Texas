@@ -1,10 +1,5 @@
-
-using System;
-using Data.ValueObjects;
-using Managers;
-using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.Serialization;
+using UnityEngine.EventSystems;
 
 public class PlayerAnimationController : MonoBehaviour
 {
@@ -12,8 +7,8 @@ public class PlayerAnimationController : MonoBehaviour
     public string currentState;
     internal bool PlayerHasPistol = false;
     internal bool PlayerMoving = false;
-    internal bool PlayerAttacking = false;
-
+    internal bool PlayerAttacking;
+    
     private const string PlayerPistolShoot = "PlayerPistolShoot";
     private const string PlayerPistolIdle = "PlayerPistolIdle";
     private const string PlayerPistolMoving = "PlayerPistolWalk";
@@ -23,37 +18,37 @@ public class PlayerAnimationController : MonoBehaviour
 
     internal void PlayAnimation()
     {
-        if (PlayerMoving == false & PlayerHasPistol == false & PlayerAttacking == false)
+        if (!PlayerHasPistol)
         {
-            ChangeAnimationState(PlayerUnarmedIdle);
-            PlayerAttacking = false;
-
+            if (!PlayerMoving & !PlayerAttacking)
+            {
+                ChangeAnimationState(PlayerUnarmedIdle);
+            }
+            if (PlayerMoving)
+            {
+                ChangeAnimationState(PlayerUnarmedMoving);
+            }
+            if (PlayerAttacking)
+            {
+                ChangeAnimationState(PlayerUnarmedAttack);
+                PlayerAttacking = !PlayerAttacking;
+            } 
         }
-        if (PlayerMoving == true & PlayerHasPistol == false )
+        if (PlayerHasPistol)
         {
-            ChangeAnimationState(PlayerUnarmedMoving);
-        }
-        if (PlayerHasPistol == false & PlayerAttacking == true)
-        {
-            ChangeAnimationState(PlayerUnarmedAttack);
-            PlayerAttacking = false;
-        } 
-        
-        
-        if (PlayerMoving == false & PlayerHasPistol == true & PlayerAttacking == false)
-        {
-            ChangeAnimationState(PlayerPistolIdle);
-            PlayerAttacking = false;
-        }
-        if (PlayerMoving == true & PlayerHasPistol == true )
-        {
-            ChangeAnimationState(PlayerPistolMoving);
-            
-        }
-        if ( PlayerHasPistol == true & PlayerAttacking == true )
-        { 
-            ChangeAnimationState(PlayerPistolShoot); 
-            PlayerAttacking = false;
+            if (!PlayerMoving & !PlayerAttacking)
+            {
+                ChangeAnimationState(PlayerPistolIdle);
+            }
+            if (PlayerMoving)
+            {
+                ChangeAnimationState(PlayerPistolMoving);
+            }
+            if (PlayerAttacking)
+            {
+                ChangeAnimationState(PlayerPistolShoot);
+                PlayerAttacking = !PlayerAttacking;
+            }
         }
     }
 
@@ -61,12 +56,11 @@ public class PlayerAnimationController : MonoBehaviour
     {
         if (currentState == newState)
         {
-            currentState = null;
+            return;
         }
         animator.Play(newState);
         currentState = newState;
     }
-
 }
 
 

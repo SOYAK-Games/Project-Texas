@@ -6,8 +6,8 @@ namespace Controllers.Player
 {
     public class PlayerMovementController : MonoBehaviour
     {
-        [SerializeField] public Rigidbody2D rigidbody;
-        [SerializeField] public bool PlayerMovementInput = false;
+        [SerializeField] private Rigidbody2D rigidbody;
+        public bool PlayerMovementInput = false;
         [ShowInInspector] private MovementData _data;
 
         internal void GetMovementData(MovementData movementData)
@@ -15,7 +15,7 @@ namespace Controllers.Player
             _data = movementData;
         }
 
-        private void LateUpdate()
+        private void FixedUpdate()
         {
             LookAtMouse();
             if (PlayerMovementInput == true)

@@ -3,11 +3,10 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 public class Enemy : MonoBehaviour, IHittable
 {
-    [SerializeField] public int hitPoints = 1;
+    public int hitPoints = 2;
     
     public void ReceiveHit()
     {
-        
         hitPoints -= 1;
         if (hitPoints <= 0)
         {
