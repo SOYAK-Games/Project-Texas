@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &24575767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 24575768}
+  m_Layer: 8
+  m_Name: 'EnemyBulletSpawnPoint '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &24575768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24575767}
+  m_LocalRotation: {x: -0, y: -0, z: 0.06897597, w: 0.9976184}
+  m_LocalPosition: {x: 2, y: 0.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 483171675}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 7.91}
 --- !u!1 &28674153
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,10 +556,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483171671}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.75, y: 0.01, z: 0.038176753}
+  m_LocalPosition: {x: 14.82, y: 0.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 24575768}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -599,7 +631,15 @@ MonoBehaviour:
   - {fileID: 1629540413}
   - {fileID: 727390003}
   - {fileID: 28674154}
-  detectionDistance: 2
+  detectionDistance: 6
+  bulletPrefab: {fileID: 7883415281979476382, guid: 85842996f6cde7c429c411975aa8d26b, type: 3}
+  firePoint: {fileID: 24575768}
+  shootingRate: 1
+  bulletSpeed: 10
+  _bulletTrail: {fileID: 8071415750942524881, guid: 04bfe3ef1306bb347813d02a059016bd, type: 3}
+  weaponRange: 10
+  bulletForce: 100
+  attackDistance: 6
 --- !u!195 &483171681
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14337,7 +14377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947417976}
   m_LocalRotation: {x: -0, y: -0, z: 0.06897597, w: 0.9976184}
-  m_LocalPosition: {x: 1.5, y: -0.3, z: 0}
+  m_LocalPosition: {x: 1.5, y: -0.3000002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
