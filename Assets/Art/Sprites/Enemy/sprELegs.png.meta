@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,7 +115,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: sprELegs_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 9
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b64eaab8e881a34d99d97c2bb2eb83f
+      internalID: 1251685210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprELegs_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 9
+        width: 19
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5086983, y: 0.45592746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3da90a7b741024faab237888d2693d
+      internalID: 1038742710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprELegs_2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 9
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449e573393516e042b091aef906d2632
+      internalID: 521914262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprELegs_3
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 8
+        width: 27
+        height: 15
+      alignment: 9
+      pivot: {x: 0.48775735, y: 0.5330541}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7017594f09eac0a4bbca80d2b5cab64e
+      internalID: -1645430977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprELegs_4
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 9
+        width: 22
+        height: 15
+      alignment: 9
+      pivot: {x: 0.55258596, y: 0.49999988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ecf4ad3b18d9084e81dd20094f9dbaa
+      internalID: -1462517170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprELegs_5
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 9
+        width: 19
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5550893, y: 0.49999988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdde014ff3dceb1408ed7208b984d3a7
+      internalID: 788254651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprELegs_6
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 9
+        width: 12
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5699205, y: 0.4999998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53a57edbc7b75e45bed64a337917177
+      internalID: -1852317793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprELegs_7
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 9
+        width: 12
+        height: 14
+      alignment: 9
+      pivot: {x: 0.47432455, y: 0.5440126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd7613a8d8dc3a4fa8e34c6c086aad8
+      internalID: 845346700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprELegs_8
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 8
+        width: 19
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5040669, y: 0.57730955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b971da5b74eed418803eefbb5f27ae
+      internalID: -2050605630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprELegs_9
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 8
+        width: 22
+        height: 15
+      alignment: 9
+      pivot: {x: 0.4648576, y: 0.58246344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85c74961aeb7c84a9b4b9a3652ccce4
+      internalID: -1893214351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprELegs_10
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 9
+        width: 27
+        height: 15
+      alignment: 9
+      pivot: {x: 0.47709146, y: 0.5566934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bdc3ef33390dbe4884411aeea3ce842
+      internalID: -324495339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprELegs_11
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 8
+        width: 22
+        height: 15
+      alignment: 9
+      pivot: {x: 0.48242742, y: 0.57215536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a47950838af0b8409b06b2c0d050f6b
+      internalID: -1033652002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprELegs_12
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 8
+        width: 19
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5081337, y: 0.57215536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf04901ed992fa4ea07dc1f31f8ce90
+      internalID: 1997916807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprELegs_13
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 9
+        width: 12
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4806671, y: 0.5276105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55907d50a82326f4299b226cf6d4add2
+      internalID: -2114710074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +420,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sprELegs_0: 1251685210
+      sprELegs_1: 1038742710
+      sprELegs_10: -324495339
+      sprELegs_11: -1033652002
+      sprELegs_12: 1997916807
+      sprELegs_13: -2114710074
+      sprELegs_2: 521914262
+      sprELegs_3: -1645430977
+      sprELegs_4: -1462517170
+      sprELegs_5: 788254651
+      sprELegs_6: -1852317793
+      sprELegs_7: 845346700
+      sprELegs_8: -2050605630
+      sprELegs_9: -1893214351
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

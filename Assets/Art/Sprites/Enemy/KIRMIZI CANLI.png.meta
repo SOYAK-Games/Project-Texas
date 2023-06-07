@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e5da2b1048ed0e948b8ab7b24664fc03
+guid: a3ed0ddfcbf7023439ad61be7a9763fc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,7 +115,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: KIRMIZI CANLI_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 7
+        width: 32
+        height: 20
+      alignment: 9
+      pivot: {x: 0.23636833, y: 0.5060259}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24befee1a88ff14188c6f8d5fe93072
+      internalID: 2054773568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KIRMIZI CANLI_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 7
+        width: 32
+        height: 20
+      alignment: 9
+      pivot: {x: 0.21377134, y: 0.5060259}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a256bee4606611344a66b3c7fab70e71
+      internalID: -52679393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KIRMIZI CANLI_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 6
+        width: 35
+        height: 21
+      alignment: 9
+      pivot: {x: 0.18665488, y: 0.5114779}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d89cc8f7830674588e49eda8220467
+      internalID: 1003544567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KIRMIZI CANLI_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 7
+        width: 38
+        height: 20
+      alignment: 9
+      pivot: {x: 0.17333463, y: 0.5060259}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a593a41f02ad55a48a5b10b6e0cbf355
+      internalID: -1627414988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KIRMIZI CANLI_4
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 7
+        width: 32
+        height: 20
+      alignment: 9
+      pivot: {x: 0.23636818, y: 0.49397412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d94190c17af6ae409c8892afb6f845e
+      internalID: -892497445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +231,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KIRMIZI CANLI_0: 2054773568
+      KIRMIZI CANLI_1: -52679393
+      KIRMIZI CANLI_2: 1003544567
+      KIRMIZI CANLI_3: -1627414988
+      KIRMIZI CANLI_4: -892497445
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

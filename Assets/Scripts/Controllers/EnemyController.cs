@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour
     public GameObject player;
 
     // Reference to the NavMeshAgent component
-    NavMeshAgent navAgent;
+    internal NavMeshAgent navAgent;
 
     // List of waypoints for the enemy to patrol between
     public List<Transform> waypoints;
@@ -22,11 +22,11 @@ public class EnemyController : MonoBehaviour
     public float detectionDistance = 5f;
 
     // Boolean indicating whether the enemy is currently patrolling
-    private bool isPatrolling = true;
+    internal bool isPatrolling = true;
 
     public GameObject bulletPrefab; // Prefab for the bullet
     public Transform firePoint; // Point where the bullet is spawned
-    public float shootingRate = 1f; // How often the enemy shoots
+    public float shootingRate = 3f; // How often the enemy shoots
     public float bulletSpeed = 10f; // Speed of the bullet
     [SerializeField] private GameObject _bulletTrail;
     public float weaponRange = 10f;
@@ -37,6 +37,9 @@ public class EnemyController : MonoBehaviour
 
     private Transform target; // Player object
     private float shootingTimer = 0f; // Timer for shooting
+
+    public SpriteRenderer _spriteRenderer;
+    public Sprite _newSprite;
 
     
 
@@ -55,22 +58,23 @@ public class EnemyController : MonoBehaviour
 
     private void Shoot()
     {
-        // Calculate direction from enemy to player
-        Vector2 direction = target.position - firePoint.position;
-        direction.Normalize();
-
-        // Spawn bullet at the fire point
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-
-        // Get the Rigidbody2D component of the bullet
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-
-        // Set the velocity of the bullet to the direction multiplied by the bullet speed
-        rb.AddForce(direction * bulletForce);
-        
-        // Rotate the bullet to face the correct direction (optional)
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        bullet.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        var hit = Physics2D.Raycast(firePoint.position, transform.right, weaponRange);
+        var trail = Instantiate(_bulletTrail, firePoint.position, transform.rotation);
+        var trailscript = trail.GetComponent<BulletTrail>();
+        if (hit.collider != null)
+        {
+            trailscript.SetTargetPosition(hit.point);
+            var hittable = hit.collider.GetComponent<IHittable>();
+            if (hittable != null)
+            {
+                hittable?.ReceiveHit();
+            }
+        }
+        else
+        {
+            var endPosition = firePoint.position + transform.right * weaponRange;
+            trailscript.SetTargetPosition(endPosition);
+        }
     }
 
     
@@ -88,7 +92,7 @@ public class EnemyController : MonoBehaviour
         endPosition = (Vector2)firePoint.position + (direction * weaponRange);
     }
 
-    void Update()
+    private void FixedUpdate()
     {
         // Calculate the distance between the enemy and the player
         float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
@@ -116,12 +120,16 @@ public class EnemyController : MonoBehaviour
             FaceTarget();
             if (Vector2.Distance(transform.position, target.position) <= attackDistance)
             {
-                shootingTimer += Time.deltaTime;
+                shootingTimer += 1;
 
-                if (shootingTimer >= shootingRate)
+                if (shootingTimer <= shootingRate)
                 {
                     Shoot();
                     shootingTimer = 0f;
+                }
+                else
+                {
+                    return;
                 }
             }
         }
@@ -138,6 +146,11 @@ public class EnemyController : MonoBehaviour
             currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Count;
             navAgent.SetDestination(waypoints[currentWaypointIndex].position);
         }
+    }
+
+    public void ChangeSprite()
+    {
+        _spriteRenderer.sprite = _newSprite;
     }
 }
 

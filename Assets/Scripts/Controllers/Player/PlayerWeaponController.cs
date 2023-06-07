@@ -2,7 +2,7 @@ using System;
 using Interfaces;
 using UnityEngine;
 
-public class PlayerWeaponController : MonoBehaviour, IHittable
+public class PlayerWeaponController : MonoBehaviour
 {
     public bool PlayerHasPistol = false;
     [SerializeField] private PlayerAnimationController animationController;
@@ -12,6 +12,7 @@ public class PlayerWeaponController : MonoBehaviour, IHittable
     [SerializeField] private float weaponThrowRange = 8f;
     [SerializeField] private Transform _gunPoint;
     private Enemy EnemyScript;
+    private EnemyController _enemyController;
     private int hitPoints;
     private GameObject CollectiblePistol;
 
@@ -94,18 +95,7 @@ public class PlayerWeaponController : MonoBehaviour, IHittable
             }
         }
     }
-
-    public void ReceiveHit()
-    {
-        hitPoints = EnemyScript.hitPoints;
-        
-        hitPoints -= 2;
-        if (hitPoints <= 0)
-        {
-            gameObject.SetActive(false);
-        }
-    }
-   
+    
 
 }
     

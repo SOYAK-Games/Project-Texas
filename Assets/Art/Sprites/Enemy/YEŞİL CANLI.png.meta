@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8882a107b8b83f74c9646ec5097fa0a7
+guid: 5ba16165f39ce1240b3bc16ad1ad625b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,7 +115,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: sprE1G_AttackPistol_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 7
+        width: 32
+        height: 20
+      alignment: 9
+      pivot: {x: 0.2345683, y: 0.50598156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94700d8e9b9ad1469c38f6decc932d0
+      internalID: 1352068743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprE1G_AttackPistol_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 7
+        width: 32
+        height: 20
+      alignment: 9
+      pivot: {x: 0.2046603, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21420ae51bf4fab49a0e7edac829892b
+      internalID: 1050350002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprE1G_AttackPistol_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 6
+        width: 35
+        height: 21
+      alignment: 9
+      pivot: {x: 0.18895873, y: 0.5284837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebc237e532ed704f88e64c3a9ddfc7a
+      internalID: 884421554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprE1G_AttackPistol_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 7
+        width: 38
+        height: 20
+      alignment: 9
+      pivot: {x: 0.17258815, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23da20e7c168b1f4e846e5f254681436
+      internalID: -602881387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprE1G_AttackPistol_4
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 7
+        width: 32
+        height: 20
+      alignment: 9
+      pivot: {x: 0.25326014, y: 0.50598156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b7ddc7e5701ac4bb2cb351b715b019
+      internalID: -1168258498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +231,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sprE1G_AttackPistol_0: 1352068743
+      sprE1G_AttackPistol_1: 1050350002
+      sprE1G_AttackPistol_2: 884421554
+      sprE1G_AttackPistol_3: -602881387
+      sprE1G_AttackPistol_4: -1168258498
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
