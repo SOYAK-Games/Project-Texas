@@ -2,10 +2,12 @@
 using Interfaces;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public class Enemy : MonoBehaviour, IHittable
 {
     public int hitPoints = 2;
     public EnemyController _enemyController;
+    
 
     public void ReceiveHit()
     {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Interfaces;
+using UnityEngine.SceneManagement;
 
 public class EnemyController : MonoBehaviour
 {
@@ -40,10 +41,14 @@ public class EnemyController : MonoBehaviour
 
     public SpriteRenderer _spriteRenderer;
     public Sprite _newSprite;
-
+    public bool isDead = false;
     
 
-   
+    private GameManager gameManager;
+
+
+
+
 
     private bool PlayerIsInRange()
     {
@@ -82,6 +87,7 @@ public class EnemyController : MonoBehaviour
     {
         target = GameObject.FindGameObjectWithTag("Player").transform; // Find player object
         // Get the NavMeshAgent component
+        gameManager = GameObject.FindObjectOfType<GameManager>();
         navAgent = GetComponent<NavMeshAgent>();
         navAgent.updateRotation = false; 
         navAgent.updateUpAxis = false;
@@ -150,8 +156,19 @@ public class EnemyController : MonoBehaviour
 
     public void ChangeSprite()
     {
+        if (!isDead)
+        {
+            isDead = true;
+            GetComponent<SpriteRenderer>().sprite = _newSprite;
+            gameManager.IncreaseDeadEnemyCount();
+        }
+
         _spriteRenderer.sprite = _newSprite;
+      
+        
     }
+
+    
 }
 
 
